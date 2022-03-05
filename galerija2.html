@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="styles/gallery2_style.css">
+      <!--GoogleFonts--> 
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+      <!--dozvoljava koristenje edge moda-->
+      <meta http-equiv="X-UA_Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, intial-scale=1.0">
+      <!--stackoverflow--><!--dodatak za listajuću (carousel, slider) galeriju -->
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      
+      <style media="screen">
+         .carousel-cell {
+         width: 100%;
+         }
+         /* cell number */
+         .carousel-cell:before {
+         display: block;
+         }
+      </style>
+      <!--ikona u tab pretrazivacu-->
+      <link rel="icon" href="slike/ikona/kamera_galerija.png">
+      <!--naslov u tabu-->
+      <title>Galerija 2</title>
+   </head>
+   <body>
+      <!--navigacija-->
+      <div id="horizontalniMeni">
+         <ul id="nav">
+            <li class="nav-link"><a href="index.html" target="_blank">Početna</a></li>
+            <div class="nav-link">
+               <a href="index.html" target="_blank">O meni</a> 
+               <ul id="second-level">
+                  <li><a href="index.html#omeni" target="_blank">Biografija</a></li>
+                  <li><a href="index.html#jezici" target="_blank">Jezici</a></li>
+                  <li><a href="index.html#volontiranje" target="_blank">Volontiranje</a></li>
+                  <li><a href="index.html#" target="_blank">Konferencije</a></li>
+                  <li><a href="index.html#" target="_blank">Edukacija</a></li>
+               </ul>
+            </div>
+            <!--slike-->
+            <div class="nav-link">
+               <a href="galerija.html" target="_blank">Galerija</a> 
+               <ul id="second-level">
+                  <li><a href="galerija.html#g1" target="_blank">Galerija 1</a></li>
+                  <li><a href="galerija2.html#g2">Galerija 2</a></li>
+               </ul>
+            </div>
+            <!--blogovi-->
+            <div class="nav-link">
+               <a href="blogovi.html" target="_blank">Blogovi</a> 
+               <ul id="second-level">
+                  <li><a href="blogovi.html#b1" target="_blank">Blog 1</a></li>
+                  <li><a href="blogovi.html#b2" target="_blank">Blog 2</a></li>
+                  <li><a href="blogovi.html#b3" target="_blank">Blog </a></li>
+               </ul>
+            </div>
+            <!--projekti-->
+            <div class="nav-link">
+               <a href="projekti.html" target="_blank">Projekti</a> 
+               <ul id="second-level">
+                  <li><a href="#" target="_blank">Projekat 1</a></li>
+                  <li><a href="#" target="_blank">Projekat 2</a></li>
+               </ul>
+            </div>
+            <!--kontakt-->
+            <li class="nav-link"><a href="kontakt.html" target="_blank">Kontakt</a></li>
+         </ul>
+      </div>
+      <!--kraj navigacije-->
+      <!--pocetna-->
+      <section id="pocetna">
+         <br><br><br>
+         <div id="g2" class="row">
+            <h1>DOBRO DOŠLI U DRUGU GALERIJU</h1>
+            <h2>Nebo</h2>
+            <h3>Neki citati poznatih pisaca na engleskom jeziku</h3>
+            <hr>
+            <!-- citati preuzeti sa:  https://everydaypower.com/-->
+            <pre>
+      <b><q>The sky is an infinite movie to me. I never get tired of looking at what’s happening up there.</q></b> – K. D. Lang
+
+        <b><q>Don’t forget, beautiful sunsets, need cloudy skies.</q></b>  — Paulo Coelho
+
+          <b><q>Only from the heart can you touch the sky.</q></b>  – Rumi
+
+              <b><q>Don’t let one cloud obliterate the whole sky.</q></b> – Anais Nin
+                
+                <b><q>The sky is the ultimate art gallery just above us.</q></b> – Ralph Waldo Emerson
+
+
+                
+  <b><q>You can never have too much sky. You can fall asleep and wake up drunk on sky, and sky can keep you safe when you are sad.</q></b> ― Cisneros Sandra
+  
+    <b><q>Got tired eyes from working on the computer all day? Rest your eyes on something green.</q></b> ― ...
+  
+      <b><q>Adopt the pace of nature: her secret is patience.</q></b> – Ralph Waldo Emerson 
+  <!--strelice prema dolje-->
+  <svg style="float: left;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+  <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+  </svg>
+  <svg style="float: right;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+  <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+  </svg>    
+  <hr>      
+</pre>
+         </div>
+      </section>
+      <!--kraj pocetne-->
+      <!--slike-->  <!--pomogao video: https://www.youtube.com/watch?v=mxb08zLz0vs-->
+      <section id="slike">
+         <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+            <div class="carousel-cell">
+               <img class="w3-image" src="slike/priroda/nebo (15).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (3).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (18).jpg" width="20%">
+            </div>
+            <div class="carousel-cell">
+               <img class="w3-image" src="slike/priroda/nebo (14).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (12).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (21).jpg" width="20%">
+            </div>
+            <div class="carousel-cell">
+               <img class="w3-image" src="slike/priroda/nebo (19).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (32).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (29).jpg" width="20%">
+            </div>
+         </div>
+         <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+            <div class="carousel-cell">
+               <img class="w3-image" src="slike/priroda/nebo (28).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (30).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (33).jpg" width="20%">
+            </div>
+            <div class="carousel-cell">
+               <img class="w3-image" src="slike/priroda/nebo (37).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (11).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (34).jpg" width="20%">
+            </div>
+         </div>
+         <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+            <div class="carousel-cell">
+               <img class="w3-image" src="slike/priroda/nebo (1).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (22).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (48).jpg" width="20%">
+            </div>
+            <div class="carousel-cell">
+               <img class="w3-image" src="slike/priroda/nebo (8).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (10).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (9).jpg" width="20%">
+            </div>
+            <div class="carousel-cell">
+               <img class="w3-image" src="slike/priroda/nebo (2).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (4).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (5).jpg" width="20%">
+            </div>
+         </div>
+         <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+            <div class="carousel-cell">
+               <img class="w3-image" src="slike/priroda/nebo (17).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (16).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (49).jpg" width="20%">
+            </div>
+            <div class="carousel-cell">
+               <img class="w3-image" src="slike/priroda/nebo (7).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (13).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (31).jpg" width="20%">
+            </div>
+            <div class="carousel-cell">
+               <img class="w3-image" src="slike/priroda/nebo (20).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (26).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (35).jpg" width="20%">
+            </div>
+         </div>
+         <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+            <div class="carousel-cell">
+               <img class="w3-image" src="slike/priroda/nebo (45).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (42).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (39).jpg" width="20%">
+            </div>
+            <div class="carousel-cell">
+               <img class="w3-image" src="slike/priroda/nebo (6).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (24).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (25).jpg" width="20%">
+               <img class="w3-image" src="slike/priroda/nebo (44).jpg" width="20%">
+            </div>
+            <div class="carousel-cell">
+               <video width="500" height="500" controls>
+                  <source src="slike/priroda/pogled.mp4" type="video/mp4">
+               </video>
+            </div>
+         </div>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      </section>
+      <!--Kontakt forma - footer-->
+      <!--footer-->
+      <footer>
+         <br>
+         <svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+         </svg>
+         <a href="index.html">Nazad na početnu</a>
+         <h2>Kontaktirajte me</h2>
+         <section id="ikonice">
+            <div id="slicice">
+               <a target="_blank" href="https://www.facebook.com/sanja.salihovic"><img class="dm" src="slike/mreze/facebook.png" alt="fb" width="3%" margin-top="50px"></a>
+               <a  target="_blank" href="https://www.instagram.com/sanja.salihovic/?hl=hr"><img class="dm" src="slike/mreze/instagram.png" alt="ig" width="3%"></a>
+               <a target="_blank" href="https://www.linkedin.com/in/sanja-salihovic/"><img class="dm" src="slike/mreze/linkedin.png" alt="in" width="3%"></a>
+            </div>
+         </section>
+         <img id="ruza" src="slike/ruze.png" alt="korner" width="100">
+         <img id="ruza1" src="slike/ruze.png" alt="korner" width="100">
+      </footer>
+      <!--kraj stranice-->
+   </body>
+</html>

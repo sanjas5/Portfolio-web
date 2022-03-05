@@ -1,0 +1,18 @@
+--Vecina koristenih vanjskih stvari je navedena u komentarima u
+--css i html fajlovima, ali neki su i ovdje:
+
+--palette color theme
+https://coolors.co/palettes/trending
+
+https://scontent.fsjj2-1.fna.fbcdn.net/v/t1.15752-9/125966927_184089926673047_8410623310491060359_n.png?_nc_cat=100&ccb=2&_nc_sid=ae9488&_nc_ohc=o4THAD83buwAX-pCyTr&_nc_ht=scontent.fsjj2-1.fna&oh=f41e138d5c2931ebfabf93c7e90ae240&oe=5FDBDF47
+
+--boja koristena za blog
+https://loading.io/color/feature/nodejs/
+
+--izbor ikonica
+https://devicon.dev/
+https://icons.getbootstrap.com/
+
+--pozadine BLOGOVA
+https://www.pexels.com/
+

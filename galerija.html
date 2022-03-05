@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="styles/gallery_style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!--GoogleFonts-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Sansita+Swashed:wght@300;400&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+      <!--javascript za galeriju-->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+      <script>
+         $(function() {
+         var selectedClass = "";
+         $(".filter").click(function(){
+         selectedClass = $(this).attr("data-rel");
+         $("#gallery").fadeTo(100, 0.1);
+         $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+         setTimeout(function() {
+         $("."+selectedClass).fadeIn().addClass('animation');
+         $("#gallery").fadeTo(300, 1);
+         }, 300);
+         });
+         });
+      </script>
+      <!--ikona u tab pretrazivacu-->
+      <link rel="icon" href="slike/ikona/kamera_galerija.png">
+      <!--naslov u tabu-->
+      <title>Galerija 1</title>
+   </head>
+   <body>
+      <!--navigacija-->
+      <div id="horizontalniMeni">
+         <ul id="nav">
+            <li class="nav-link"><a href="index.html" target="_blank">Početna</a></li>
+            <div class="nav-link">
+               <a href="index.html" target="_blank">O meni</a> 
+               <ul id="second-level">
+                  <li><a href="index.html#omeni" target="_blank">Biografija</a></li>
+                  <li><a href="index.html#jezici" target="_blank">Jezici</a></li>
+                  <li><a href="index.html#volontiranje" target="_blank">Volontiranje</a></li>
+               </ul>
+            </div>
+            <!--slike-->
+            <div class="nav-link">
+               <a href="galerija.html" target="_blank">Galerija</a> 
+               <ul id="second-level">
+                  <li><a href="galerija.html#g1">Galerija 1</a></li>
+                  <li><a href="galerija2.html#g2" target="_blank">Galerija 2</a></li>
+               </ul>
+            </div>
+            <!--blogovi-->
+            <div class="nav-link">
+               <a href="blogovi.html" target="_blank">Blogovi</a> 
+               <ul id="second-level">
+                  <li><a href="blogovi.html#b1" target="_blank">Blog 1</a></li>
+                  <li><a href="blogovi.html#b2" target="_blank">Blog 2</a></li>
+                  <li><a href="blogovi.html#b3" target="_blank">Blog 3</a></li>
+               </ul>
+            </div>
+            <!--projekti-->
+            <div class="nav-link">
+               <a href="index.html#projekti">Projekti</a> 
+               <ul id="second-level">
+                  <li><a href="index.html#pr1" target="_blank">Projekat 1</a></li>
+                  <li><a href="index.html#pr2" target="_blank">Projekat 2</a></li>
+                  <li><a href="index.html#pr3" target="_blank">Projekat 2</a></li>
+               </ul>
+            </div>
+            <!--kontakt-->
+            <li class="nav-link"><a href="kontakt.html" target="_blank">Kontakt</a></li>
+         </ul>
+      </div>
+      <!--kraj navigacije-->
+      <!--pocetna-->
+      <section id="pocetna">
+         <h1>OVO JE GALERIJA</h1>
+         <h2>DOBRO DOŠLI</h2>
+         </div>
+         <figure id="gal_1">
+            <a href="galerija.html#g1">
+               <h2>GALERIJA 1</h2>
+            </a>
+            <div>
+            <div class="responsive">
+               <div class="slika1">
+                  <img src="slike/gitara/nastup (2).jpg" alt="Northern Lights">
+               </div>
+               <div class="responsive">
+                  <div class="slika1">
+                     <img src="slike/gitara/nastup (11).jpg" alt="Northern Lights">
+                  </div>
+               </div>
+               <div id="dugme_nota">
+                  <a href="galerija.html#video"><button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">Video</button></a>
+                  <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-music-note-beamed" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                     <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                     <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                  </svg>
+                  <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-music-note" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                     <path fill-rule="evenodd" d="M9 3v10H8V3h1z"/>
+                     <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z"/>
+                  </svg>
+               </div>
+            </div>
+         </figure>
+         <figure id="gal_2">
+            <a href="galerija2.html#g2">
+               <h2>GALERIJA 2</h2>
+            </a>
+            <div>
+            <div class="responsive">
+               <div class="slika2">
+                  <img src="slike/priroda/nebo (7).jpg" alt="Northern Lights">
+               </div>
+               <div class="responsive">
+                  <div class="slika2">
+                     <img src="slike/priroda/nebo (4).jpg" alt="Northern Lights">
+                  </div>
+               </div>
+            </div>
+         </figure>
+      </section>
+      <!--kraj pocetne-->
+      <!-- Prva galerija --> <!--pomoc prvi dizajn:	https://mdbootstrap.com/plugins/jquery/gallery/-->
+      <div id="g1" class="row">
+         <br><br><br>
+         <h2>Gitara, nastupi i tako to..</h2>
+         <h4>Ovu galeriju posvećujem svojim najljepšim uspomenama sa najdražim instrumentom.</h4>
+      </div>
+      <div class="gallery" id="gallery">
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/proba.jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Proba, <br>SCC, Sarajevo</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/beograd.jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Nastup na "Pinkovim zvezdicama",<br> Sara i ja,<br>Beograd, 2016</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/nastup (1).jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Nastup u Internacionalnoj srednjoj školi,<br> Elma i ja,<br>Sarajevo, 2016</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/nastup (13).jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Nastup u "KJUDOM" - <br>DOM ZA SOCIJALNO ZDRAVSTVENO ZBRINJAVANJE OSOBA SA INVALIDITETOM I DRUGIH OSOBA,<br> Sarajevo</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/nastup (9).jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Bajramski program FACE TV, <br> Sarajevo, 2017</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/nastupp.jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Nastup u Domu Armije u Sarajevu</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/naj1.jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Jedna od najdražih slika,<br>Nastup u Srednjoj školi, <br> Sarajevo 2016</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/ja.jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Sanja u mlađim danima sa gitarom</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/nastup (10).jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Na jednoj od proba,<br>Isprobavanje nove električne gitare,<br>Sarajevo, 2016</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/nastup (17).jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Takmičenje za Tursku olimpijadu,<br> Sarajevo 2014.</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/nastup2.jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Nastup za rođendan Općine Stari Grad,<br> Sarajevo 2016.</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/nastup (20).jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Nastup u Internacionalnoj srednjoj školi,<br> Elma i ja,<br>Sarajevo, 2016</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/tvsa.jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Nastup na TVSA za novogodišnji program,<br>Aka_demija Pink Panter,<br>Sarajevo, 2015</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/nastup (1).png" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Nastup na FACE TV,<br>Sarajevo, 2016</div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mb-3 pics animation all 2">
+               <img class="img-fluid" src="slike/gitara/nastup (3).jpg" alt="Card image cap" class="image" width="500">
+               <div class="overlay">
+                  <div class="text">Nastup na "Pinkovim zvezdicama",<br> Sara, Irnes, Tea i ja,<br>Beograd, 2016</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--kraj galerije slika-->
+      <!--dva videa-->
+      <div id="video">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/fiwcY8G6k40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F292401284123421%2Fvideos%2F1396118787084993%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+         </div>
+      <!--Kontakt forma - footer-->
+      <!--footer-->
+      <footer>
+         <br>
+         <svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+         </svg>
+         <a href="index.html">Nazad na početnu</a>
+         <h2>Kontaktirajte me</h2>
+         <section id="ikonice">
+            <div id="slicice">
+               <a target="_blank" href="https://www.facebook.com/sanja.salihovic"><img class="dm" src="slike/mreze/facebook.png" alt="fb" width="3%" margin-top="50px"></a>
+               <a  target="_blank" href="https://www.instagram.com/sanja.salihovic/?hl=hr"><img class="dm" src="slike/mreze/instagram.png" alt="ig" width="3%"></a>
+               <a target="_blank" href="https://www.linkedin.com/in/sanja-salihovic/"><img class="dm" src="slike/mreze/linkedin.png" alt="in" width="3%"></a>
+            </div>
+         </section>
+         <img id="ruza" src="slike/ruze.png" alt="korner" width="100">
+         <img id="ruza1" src="slike/ruze.png" alt="korner" width="100">
+      </footer>
+      <!--kraj stranice-->
+   </body>
+</html>

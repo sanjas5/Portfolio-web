@@ -1,0 +1,801 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html {
+	font-size: 11px;
+	font-family: 'Noto Serif', serif;
+}
+body {
+	background-color: #161a1d;
+	height: auto;
+	display: inline-block;
+}
+
+
+/*koristimo u svakoj sekciji*/
+
+.container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#dezen {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 10px;
+	max-width: 200px;
+	transform: rotate(180deg);
+}
+
+#dezen1 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-bottom: 10px;
+	max-width: 200px;
+	transform: rotate(90deg);
+}
+/*navigacija*/
+#horizontalniMeni {
+	position: fixed;
+	display: right;
+	box-sizing: border-box;
+	width: 100%;
+	list-style: none;
+	background-color: #161a1d;
+	z-index: 100000;
+}
+
+#horizontalniMeni #nav {
+	position: fixed;
+	list-style-type: none;
+	top: 0;
+	right: 0;
+	width: 100%;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	letter-spacing: 2px;
+	background-color: #d3d3d3;
+	color: #0b090a;
+	transition: ease-in-out 0.3s;
+	display: flex;
+	justify-content: flex-end;
+	box-shadow: 22px 2px 20px #05090a;
+}
+
+#horizontalniMeni #nav .nav-link {
+	float: left;
+	display: inline;
+}
+
+#horizontalniMeni #nav .nav-link a {
+	display: inline-block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: #0b090a;
+}
+
+#horizontalniMeni #nav .nav-link a:visited {
+	color: #a4161a;
+}
+
+#horizontalniMeni #nav li:hover {
+	background-position: right-top;
+}
+
+#horizontalniMeni #nav li:hover a {
+	width: all;
+	color: #a4161a;
+	display: block;
+}
+
+#horizontalniMeni #nav .nav-link a:hover {
+	background-color: rgba(229, 56, 59, 0.5);
+	color: #f5f3f4;
+}
+
+#horizontalniMeni #nav .nav-link a:active {
+	background-color: rgba(229, 0, 59, 0.5);
+	color: #f5f3f4;
+}
+
+
+/*drugi leveli*/
+
+#second-level {
+	list-style-type: none;
+	position: fixed;
+	display: none;
+	background-color: #660708;
+	padding: 12px 16px;
+	z-index: 1;
+	padding: 0px;
+	margin: 0px;
+}
+
+#second-level a {
+	float: none;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	color: #d3d3d3;
+}
+
+#second-level li a {
+	display: block;
+	color: #d3d3d3;
+}
+
+#second-level a:visited {
+	color: white;
+}
+
+#second-level a:hover {
+	background-color: #ba181b;
+	color: #660708;
+	display: block;
+}
+
+.nav-link:hover #second-level {
+	display: block;
+}
+
+/*kraj navigacije*/
+
+.pocetna {
+	min-height: 100vh;
+	width: 100%;
+	padding-top: 50px;
+	justify-content: center;
+	background-color: #d3d3d3;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+}
+
+.pocetna .pocetna-info {
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+}
+
+.pocetna .pocetna-info .pocetna-info-naslov #ime {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	text-shadow: 5px 5px 5px #05090a;
+	font-size: 6rem;
+	text-decoration: none;
+	font-weight: 900;
+	color: #05090a;
+	letter-spacing: .5rem;
+	transition: #e53838 0.5s ease-in-out;
+	display: block;
+}
+
+.pocetna .pocetna-info .pocetna-info-podnaslov {
+	font-size: 2rem;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	letter-spacing: .4rem;
+	color: #a4161a;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 100px;
+}
+
+.pocetna .pocetna-info .pocetna-info-naslov #ime:hover {
+	line-height: 1;
+	text-decoration: none;
+	display: inline-block;
+	color: #660708;
+}
+
+#pocetna #slicice {
+	width: 100%;
+	height: 100px;
+	bottom: 0;
+}
+
+#pocetna #slicice>a {
+	padding: 10px;
+}
+
+.pocetna #slicice .dm img {
+	position: absolute;
+	display: inline-block;
+	height: 30%;
+	width: 30%;
+	bottom: 0;
+	float: right;
+	justify-content: center;
+}
+
+
+/*biografija*/
+
+#omeni {
+	min-height: 100vh;
+	width: 100%;
+	min-width: 50vh;
+	padding: 8rem 5rem;
+	flex-direction: column;
+	background-color: #a4161a;
+	padding-left: 5%;
+	padding-right: 5%;
+	position: relative;
+}
+
+#omeni .podaci {
+	text-align: center;
+}
+
+#omeni .podaci .omeni-podaci-naslov {
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	color: #b1a7a6;
+}
+
+#omeni .podaci #omeni-podaci-opis {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	width: 70%;
+	padding-top: 5%;
+	color: #d3d3d3;
+	text-align: left;
+	float: left;
+}
+
+#omeni .podaci #omeni-podaci-opis #pitanje {
+	color: #161a1d;
+	font-size: 1.5rem;
+}
+
+#omeni .omeni-button {
+	padding: 1.6rem 2.6rem;
+	display: inline-block;
+	background-color: #161a1d;
+	color: #b1a7a6;
+	text-decoration: none;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	margin-left: 5%;
+	margin-bottom: 5%;
+}
+
+#jezici .omeni-button {
+	padding: 1rem 2rem;
+	float: right;
+	margin-top: -90px;
+	background-color: #121212;
+	box-shadow: 1px 1px 8px #a4161a;
+	color: #d3d3d3;
+	text-decoration: none;
+	font-size: 1.6rem;
+}
+
+#omeni .omeni-slike #profilna {
+	margin: 0 0 0 15px;
+	align-items: right;
+	position: relative;
+	float: right;
+	display: inline-block;
+	box-shadow: 10px 10px 10px #05090a;
+	margin-top: 2%;
+}
+
+.omeni .omeni-slike .omeni-slika-nesto img {
+	height: 100% width: 100%;
+}
+
+.omeni .omeni-slike .omeni-slika-nesto::after {
+	position: absolute;
+	content: '';
+	right: -5rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 70%;
+	height: 120%;
+	background-color: rgba(34, 33, 33, 0.158);
+	z-index: -1;
+}
+
+
+/* programski jezici*/
+
+#jezici {
+	height: 110vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 00.6)), url(../slike/back.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+#jezici h2 {
+	margin-top: 20px;
+}
+
+#jezici hr {
+	/*preuzeto sa: https://stackoverflow.com/questions/9437400/css-fade-out-horizontal-rule-line-styled-div-effect-without-images*/
+	height: 1px;
+	margin: 50px 0;
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+	background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+	background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+	background: linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+	border: 0;
+}
+
+#jezici hr:after {
+	display: block;
+	content: '';
+	height: 30px;
+	background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
+	background-image: -webkit-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+	background-image: -moz-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+	background-image: -o-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+	background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+#programski_jezici svg {
+	height: 5%;
+	width: 5%;
+	padding: 5px;
+	margin-top: 80px;
+	margin-bottom: 0;
+	margin-right: 40px;
+	margin-left: 20px;
+}
+
+#programski_jezici,
+#govorni_jezici {
+	text-align: center;
+	padding: 35px;
+	margin: 10px;
+}
+
+#govorni_jezici img {
+	max-width: 13%;
+	display: inline-block;
+	margin-left: 100px;
+	margin-right: auto;
+	padding: 30px;
+	position: center;
+	text-align: center;
+	width: 16%;
+}
+
+
+#volontiranje h1,
+#naslov_jezici {
+	color: #a4161a;
+	text-shadow: 2px 2px 2px #0b090a;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	width: 40%;
+	margin: auto;
+	padding-top: 20px;
+	min-width: 100%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+#volontiranje {
+	background-color: #f5f3f4;
+	color: #0b090a;
+	min-height: 500px;
+	width: 100%;
+	height: 120vh;
+	font-size: 14px;
+	padding-top: 40px;
+}
+
+#volontiranje div {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#race p,
+#sff p {
+	padding: 20px;
+	margin: 0px 10px;
+	text-indent: 5%;
+}
+
+#sff {
+	background-color: rgba(1, 1, 1, 0.1);
+	float: left;
+	width: 40%;
+	height: 80vh;
+	border: solid 2px #a4161a;
+	border-collapse: collapse;
+	border-radius: 4px;
+	text-align: justify;
+	margin-top: 60px;
+	padding: 10px;
+}
+
+#sff img,
+#race img {
+	display: inline-block;
+	width: 80%;
+	padding: 25px;
+	position: center;
+	transform: translateX(13%);
+}
+
+#race {
+	background-color: rgba(1, 1, 1, 0.1);
+	float: right;
+	width: 35%;
+	height: 80vh;
+	border: solid 2px #a4161a;
+	border-collapse: collapse;
+	border-radius: 4px;
+	text-align: justify;
+	margin-top: 60px;
+	padding: 10px;
+}
+
+
+/*kraj volontiranja*/
+
+
+/*saznaj vise*/
+
+#vise {
+	background-color: #660708;
+	padding: 30px;
+	color: white;
+	height: 100vw;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+#bosepo p,
+#wsc p {
+	padding: 40px;
+}
+
+#bosepo,
+#wsc {
+	padding: 30px;
+	padding-top: 50px;
+	font-size: 14px;
+	width: 40%;
+}
+
+#bosepo {
+	float: left;
+	margin-left: 50px;
+}
+
+#wsc {
+	float: right;
+	margin-right: 50px;
+}
+
+
+/*kraj saznaj vise*/
+
+
+/*projekti*/
+
+#projekti {
+	background-color: #d3d3d3;
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	text-align: center;
+}
+
+#projekt_dezen {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	max-width: 100px;
+	transform: rotate(270deg);
+}
+
+#projekti h1 {
+	margin-top: 40px;
+	text-align: center;
+	font-size: 28px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#projekti h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 15px;
+}
+
+#projekti #pr1,
+#projekti #pr2,
+#projekti #pr3 {
+	padding: 10px;
+	padding-bottom: 15px;
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	height: 30%;
+	border: solid 2px #a4161a;
+	border-radius: 4px;
+	background-color: rgba(1, 1, 1, 0.1);
+	margin-top: 90px;
+	font-size: 14px;
+}
+
+#projekti #pr3 {
+	height: 15%;
+}
+
+#pr1 p,
+#pr2 p,
+#pr3 p {
+	text-align: justify;
+	margin: 5px 30px;
+}
+
+#projekti #pr1 img,
+#projekti #pr3 img {
+	text-align: center;
+	padding: 20px 0px;
+	transition: 1s;
+}
+
+#pr1 a:active img {
+	background-color: rgba(1, 1, 1, 0.1);
+	margin: 50px;
+}
+
+#pr1 svg {
+	transform: rotate(-20deg);
+}
+
+
+/*kraj projekata*/
+
+/*footer*/
+
+#kraj {
+	float: left;
+	padding-left: 100px;
+	padding-top: 30px;
+}
+
+#slicice .dm {
+	border: solid rgba(232, 71, 76, 0.3) 2px;
+	margin: 5px;
+	border-radius: 50%;
+}
+
+#slicice {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#slicice .dm:hover {
+	width: 80px;
+	height: 80px;
+	margin-top: -18px;
+	border: black;
+	-moz-box-shadow: 0 0 20px #660708;
+	/* preuzeto sa: https://stackoverflow.com/questions/14130543/using-css-how-do-you-create-larger-elements-when-the-mouse-is-over-them*/
+	-webkit-box-shadow: 0 0 20px #660708;
+	box-shadow: 0 0 20px #660708;
+}
+
+footer {
+	background-color: #0b090a;
+}
+
+footer h2,
+footer a {
+	text-shadow: 4px 4px 4px rgba(102, 7, 8, 0.7);
+	transition: 0.5s;
+	color: #d3d3d3;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 15px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	transform: translateY(20%);
+}
+
+footer a {
+	text-decoration: underline;
+	color: #d3d3d3;
+	text-align: left;
+	font-size: 10px;
+	margin-left: 10px;
+}
+
+footer a:active {
+	color: #660708;
+	background-color: rgba(255, 255, 255, 0.7)
+}
+
+footer svg {
+	color: #d3d3d3;
+}
+
+#ruza1 {
+	float: right;
+}
+
+#ikonice {
+	width: 100%;
+	height: 50px;
+	color: white;
+	float: right;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#ikonice #slicice img {
+	background-color: #d3d3d3;
+	border-radius: 50%;
+}
+/*kraj footera*/
+
+/*responsive*/
+@media(max-width: 1200px) {
+	.pocetna {
+		min-width: 400px;
+	}
+	.pocetna .pocetna-info .pocetna-info-naslov #ime {
+		font-size: 2rem;
+	}
+	.pocetna .pocetna-info .pocetna-info-podnaslov {
+		font-size: 1rem;
+	}
+	#slicice .dm {
+		width: 8%;
+	}
+	#omeni {
+		margin: 0;
+		font-size: 12px;
+		height: auto;
+		padding: 25px 10px 0px 10px;
+	}
+	#omeni .omeni-button {
+		float: right;
+		font-size: 10px;
+		padding: 1px;
+		margin-left: 270px;
+		margin-right: 200px;
+		margin-bottom: 0px;
+	}
+	#jezici .omeni-button {
+		float: inherit;
+		bottom: auto;
+		width: 30%;
+		text-align: center;
+	}
+	#omeni .podaci .omeni-podaci-naslov {
+		font-size: 2rem;
+	}
+	#dezen {
+		max-width: 100px;
+	}
+	#dezen1 {
+		display: none;
+	}
+	#projekti h1 {
+		margin: 0;
+		padding-top: 10px;
+	}
+	#jezici,
+	#omeni .podaci #omeni-podaci-opis {
+		height: 100vh;
+		font-size: smaller;
+		padding-left: 10px;
+		line-height: normal;
+	}
+	#jezici {
+		text-align: center;
+	}
+	#volontiranje {
+		padding: 0px 20px 50px 20px;
+		height: auto;
+	}
+	#volontiranje div {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	#sff,
+	#race {
+		height: auto;
+		width: 100%;
+	}
+	#race p,
+	#sff p {
+		padding: 5px;
+		margin: 0px;
+	}
+	#programski_jezici,
+	#govorni_jezici {
+		margin: auto;
+	}
+	#programski_jezici svg {
+		width: 10%;
+		padding: 0px;
+		margin: 0px;
+	}
+	#govorni_jezici img {
+		width: 50%;
+		padding: 0px;
+		margin: 10px;
+	}
+	#volontiranje h1,
+	#naslov_jezici {
+		font-size: 14px;
+	}
+	#projekti {
+		width: 100%;
+		padding: 10px;
+		margin: 0;
+		border: none;
+	}
+	#projekti img,
+	#projekti iframe {
+		width: 40%;
+		height: auto;
+		padding: 5px;
+		margin: auto;
+		display: list-item;
+	}
+	#projekti p {
+		font-size: 12px;
+		display: inline-block;
+	}
+	#horizontalniMeni {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	#horizontalniMeni #nav {
+		display: flex;
+		flex-direction: row;
+		font-size: 6px;
+		float: right;
+	}
+	#horizontalniMeni #nav .nav-link {
+		height: 40px;
+		width: 60px;
+	}
+	#horizontalniMeni #nav .nav-link a {
+		width: 55px;
+	}
+}
